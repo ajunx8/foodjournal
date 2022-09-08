@@ -3,7 +3,6 @@ class FoodsController < ApplicationController
   
   def index
     @foods = @current_user.foods 
-    # raise 'hell'
     @data = Logs.group(:food_id).
   end
 
@@ -43,4 +42,5 @@ class FoodsController < ApplicationController
   def food_params
     params.require(:food).permit(:name, :image, :description, :user_id)
   end
+  
 end
