@@ -40,6 +40,8 @@ a {
         border: 1px solid black;
         vertical-align: middle;
         text-align: center;
+        border-radius: 1rem;
+        box-shadow: 5px 3px;
     }
 }
 
@@ -79,6 +81,10 @@ li {
 
 .nav-branding {
     font-size: 2rem;
+    .icon {
+        height: 3.6rem;
+        rotate: -45deg;
+    }
 }
 
 .nav-link {

@@ -9,3 +9,6 @@
         </div>
     <% end %>
 </div>
+
+<%= link_to 'back', tags_path %>
+<%= link_to 'delete tag', tag_path(@tag), :method => :delete, :data => { :confirm => 'Are you sure?' }%>

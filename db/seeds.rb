@@ -4,13 +4,13 @@ u2 = User.create :email => 'craigsy@ga.co', :password => 'chicken'
 puts "#{ User.count } users."
 
 Food.destroy_all
-f1 = Food.create :name => 'Apple pie', :image => 'https://www.fillmurray.com/301/302', :description => 'From McDonalds'
-f2 = Food.create :name => 'Scrambled eggs', :image => 'https://www.fillmurray.com/300/302', :description => 'Best way to cook eggs'
-f3 = Food.create :name => 'Hot chips', :image => 'https://www.fillmurray.com/300/300', :description => 'With chicken salt!'
+f1 = Food.create :name => 'Apple pie', :image => 'https://www.simplyrecipes.com/thmb/g7HAMeblJKPhx2KYGDwni6m46bU=/4000x2250/smart/filters:no_upscale()/Simply-Recipes-Homemade-Apple-Pie-LEAD-04-11db861782aa4ebdb5ef9948125ef0ef.jpg', :description => 'Home made'
+f2 = Food.create :name => 'Scrambled eggs', :image => 'https://cdn.loveandlemons.com/wp-content/uploads/2021/05/scrambled-eggs-500x375.jpg', :description => 'Best way to cook eggs'
+f3 = Food.create :name => 'Hot chips', :image => 'https://cdn.broadsheet.com.au/cache/00/19/0019c0aa2bba5ed7dabbf34c6fa6d6ef.jpg', :description => 'With chicken salt!'
 f4 = Food.create :name => 'Corn', :image => 'https://images.unsplash.com/photo-1634467524884-897d0af5e104?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80', :description => 'Buttered on the BBQ'
-f5 = Food.create :name => 'Spaghetti Bolognese', :image => 'https://www.fillmurray.com/270/259', :description => 'Home made by Me'
-f6 = Food.create :name => 'Falafel burger', :image => 'https://www.fillmurray.com/294/278', :description => 'Kebab Shop'
-f7 = Food.create :name => 'Caesar salad', :image => 'https://www.fillmurray.com/250/267', :description => 'With the crunchy bread crumbs'
+f5 = Food.create :name => 'Spaghetti Bolognese', :image => 'https://bakeplaysmile.com/wp-content/uploads/2021/08/Spaghetti-Bolognese-Final-6-1.jpg', :description => 'Home made by Me'
+f6 = Food.create :name => 'Falafel burger', :image => 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/falafel-burgers-a1dcd9e.jpg', :description => 'Kebab Shop'
+f7 = Food.create :name => 'Caesar salad', :image => 'https://www.seriouseats.com/thmb/ugNLQE6hZcoZx0Tzu780h1L3lfc=/3750x3750/smart/filters:no_upscale()/the-best-caesar-salad-recipe-06-40e70f549ba2489db09355abd62f79a9.jpg', :description => 'My local joint'
 puts "#{ Food.count } foods."
 
 Log.destroy_all
@@ -22,14 +22,14 @@ l5 = Log.create :date => '2022-09-02', :description => 'chips from the rsl, with
 l6 = Log.create :date => '2022-08-24', :description => 'made these eggs in the morning for myself'
 l7 = Log.create :date => '2022-08-21', :description => 'buttered corn, with friends after a hike'
 l8 = Log.create :date => '2022-08-11', :description => 'Too much salt for my liking'
-l9 = Log.create :date => '2022-08-30', :description => 'Very happy with the meat balls'
+l9 = Log.create :date => '2022-08-30', :description => 'Very happy'
 l10 = Log.create :date => '2022-08-02', :description => 'Spaghetti was al dente'
 l11 = Log.create :date => '2022-08-04', :description => 'Falafel was burnt'
 l12 = Log.create :date => '2022-08-06', :description => 'the texture of the falafel was just right'
 l13 = Log.create :date => '2022-08-07', :description => "surprising good from Jim's kebab shop"
 l14 = Log.create :date => '2022-08-08', :description => 'dressing was too sweet at the RSL'
 l15 = Log.create :date => '2022-08-09', :description => 'perfection'
-l16 = Log.create :date => '2022-08-10', :description => 'the bread crumbs were great'
+l16 = Log.create :date => '2022-08-10', :description => 'the croutons were great'
 puts "#{ Log.count } logs."
 
 Tag.destroy_all

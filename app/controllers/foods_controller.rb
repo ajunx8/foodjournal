@@ -3,7 +3,7 @@ class FoodsController < ApplicationController
   
   def index
     @foods = @current_user.foods 
-    @data = Logs.group(:food_id).
+    # @data = Logs.group(:food_id).count
   end
 
   def create
@@ -23,6 +23,7 @@ class FoodsController < ApplicationController
   def show
     @food = Food.find params[:id]
     @logs = @current_user.logs.where(:food_id => params[:id]).order(date: :desc)
+    @logscount = @logs.count
     @tags = Tag.all
   end
 

@@ -22,16 +22,16 @@ form {
     margin: 5px;
     padding: 5px;
     border-radius: 1rem;
-    background: linear-gradient(to right, #b3101090, #126e5085);
+    background: linear-gradient(to right,#105fb391, #126e5085);
     box-shadow: 5px 3px;
 
 }
 
 .logs {
     border: 1px solid black;
-    margin: 5px;
+    margin: 9px;
     background-color: #126e5085;
-    padding: 5px;
+    padding: 3px;
     border-radius: 1rem;
     box-shadow: 5px 3px;
     .date {
@@ -74,12 +74,9 @@ form {
         border: 1px solid black;
         vertical-align: middle;
         text-align: center;
+        box-shadow: 5px 3px;
+        border-radius: 1rem;
     }
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Special Elite', cursive;
 }
 
 .new-food {
