@@ -3,7 +3,7 @@ class TagsController < ApplicationController
   
   def index
     @usertags = @current_user.tags
-    @alltags = Tag.where.not(:id => @usertags.pluck(:id))
+    @othertags = Tag.where.not(:id => @usertags.pluck(:id))
   end
 
   def show

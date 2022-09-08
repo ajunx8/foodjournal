@@ -15,11 +15,11 @@
     </div>
 
     <div class="alltags">
-        <h3>All Tags</h3>
+        <h3>Other Tags</h3>
         <ul class="tag-list">
-            <% @alltags.each do |tag| %>
+            <% @othertags.each do |tag| %>
                 <li>
-                    <%= link_to tag.name, tag %>
+                    <%= tag.name %>
                 </li>
             <% end %>
         </ul>
