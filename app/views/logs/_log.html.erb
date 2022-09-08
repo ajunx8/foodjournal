@@ -1,0 +1,17 @@
+<div class="logs">
+    <ul>
+        <li class="date"><%= log.date.strftime '%A, %B %e, %Y' %></li>
+        <li><strong>Note: </strong><%= log.description %></li>
+        <li><%= link_to 'delete', [log.food, log], :method => :delete, :data => { :confirm => 'Are you sure?' }%></li>
+
+        <li class="show-tags">
+            <% log.tags.each do |t| %>
+                <div class="tag">
+                    <%= link_to t.name, t %>
+                </div>
+            <% end %>
+        </li>
+
+    </ul>
+</div>
+

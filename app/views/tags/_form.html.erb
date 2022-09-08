@@ -1,0 +1,22 @@
+<%= form_with model: @tag, local: true do |f| %>
+
+    <% if @tag.errors.any? %>
+        <div>
+            <h2>Error</h2>
+            <ul>
+                <% @tag.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <p>
+        <%= f.label :name %>
+        <%= f.text_field :name, :required => true %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>

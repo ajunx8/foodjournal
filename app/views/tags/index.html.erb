@@ -1,0 +1,27 @@
+<h1>Tags</h1>
+
+<%= link_to 'New Tag', new_tag_path, :class => 'newtag' %>
+
+<div class="tags">
+    <div class="usertags">
+        <h3>Your Tags</h3>
+        <ul class="tag-list">
+            <% @usertags.each do |tag| %>
+                <li>
+                    <%= link_to tag.name, tag %>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+
+    <div class="alltags">
+        <h3>All Tags</h3>
+        <ul class="tag-list">
+            <% @alltags.each do |tag| %>
+                <li>
+                    <%= link_to tag.name, tag %>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+</div>

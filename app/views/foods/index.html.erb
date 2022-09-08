@@ -1,0 +1,17 @@
+<h1>Your Foods</h1>
+<nav>
+    <%= link_to 'Tag Index', tags_path %>
+</nav>
+
+<%= pie_chart Log.group(:food_id).count %>
+
+
+<div class="your-foods">
+    <% @foods.each do |food| %>
+        <div>
+            <p>
+                <%= link_to food.name, food_path(food.id) %>
+            </p>
+        </div>
+    <% end %>
+</div>

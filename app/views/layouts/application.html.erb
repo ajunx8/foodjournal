@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodJournal</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <%= link_to 'Home', root_path, :class => 'nav-branding' %>
+
+          <% if @current_user.present? %>
+            <ul class="nav-menu">
+              <li><%= link_to 'Your foods', foods_path, :class => 'nav-link' %></li>
+              <li><%= link_to 'New food', new_food_path, :class => 'nav-link' %></li>
+              <li><%= link_to "Logout #{ @current_user.email }", login_path, :method => 'delete', :class => 'nav-link' %></li>
+            </ul>
+          <% else %>
+            <%= link_to 'Log In', login_path, :class => 'login' %>
+            <%= link_to 'Sign Up', new_user_path, :class => 'signup' %>
+          <% end %>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+      <h1 class="title animate__animated animate__pulse">Your Food Journal</h1>
+
+
+      <%= yield %>
+    </div>
+  </body>
+</html>

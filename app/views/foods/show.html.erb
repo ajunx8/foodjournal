@@ -1,0 +1,38 @@
+<h1><%= @food.name %></h1>
+
+<div class="food-info">
+    <%= image_tag @food.image, :class => 'feature' unless @food.image.empty? %>
+    <ul>
+        <li><strong>Name: </strong><%= @food.name %></li>
+        <li><strong>Description: </strong><%= @food.description %></li>
+        <li><strong>Count: </strong><%= @food.logs.count %></li>
+    </ul>
+</div>
+
+<div>
+    <%= link_to 'Edit food', edit_food_path(@food) %>
+    <%= link_to 'Delete food', @food, :method => 'delete', :data => { :confirm => 'Are you sure?' }%>
+</div>
+
+<%= form_with(model: [@food, @food.logs.build], id: 'log-form') do |f|  %>
+    <p>
+        <%= f.label :date, 'Date' %><br>
+        <%= f.date_field :date, :value => Time.now.strftime('%Y-%m-%d') %>
+    </p>
+    <p>
+        <%= f.label :description, 'Notes' %><br>
+        <%= f.text_area :description, :class => "log-description" %>
+    </p>
+
+    <p>
+        <%= f.label :tag_id %>
+        <%= f.select :tag_ids, @tags.pluck(:name, :id), :include_blank => true %>
+    </p>
+
+    <p>
+        <%= f.submit 'Create Log', :class => 'btn btn-success btn-lg' %>
+    </p>
+<% end %>
+
+<h2>Times you ate this food:</h2>
+<%= render @logs %>

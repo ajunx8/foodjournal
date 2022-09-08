@@ -1,0 +1,13 @@
+
+<% if @current_user.nil? %>
+    <h3>Sign Up To Start Journalling!</h3>
+<% end%>
+
+<h3>Check out all Foods for ideas!</h3>
+<div class="all-foods">
+    <% @foods.each do |food| %>
+        <div>
+            <%= food.name %>
+        </div>
+    <% end %>
+</div>

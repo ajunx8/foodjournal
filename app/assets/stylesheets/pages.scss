@@ -1,0 +1,142 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+    box-sizing: border-box;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #1dafbe47;
+}
+
+.title {
+    text-align: center;
+}
+
+.login, .signup {
+    float: inline-end;
+    
+}
+
+a {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.all-foods {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10em;
+        width: 10em;
+        padding: 5px;
+        margin: 10px 2px;
+        border: 1px solid black;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
+/////////////////////////BOOTSTRAP HAMBURGER STYLE
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #121c20;
+}
+
+li {
+    list-style: none; 
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color:dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+// @media(max-width:768px) {
+//     .hamburger{
+//         display: block;
+//     }
+
+//     .hamburger.active .bar:nth-child(2) {
+//         opacity: 0;
+//     }
+//     .hamburger.active .bar:nth-child(1) {
+//         transform: translateY(8px) rotate(45deg);
+//     }
+//     .hamburger.active .bar:nth-child(3) {
+//         transform: translateY(-8px) rotate(-45deg);
+//     }
+
+//     .nav-menu {
+//         position: fixed;
+//         left: -100%;
+//         top: 70px;
+//         gap: 0;
+//         flex-direction: column;
+//         background-color: #121c20;
+//         width: 100%;
+//         text-align: center;
+//         transition: 0.3s;
+//     }
+
+//     .nav-item {
+//         margin: 16px 0;
+//     }
+
+//     .nav-menu.active {
+//         left: 0;
+
+//     }
+// }

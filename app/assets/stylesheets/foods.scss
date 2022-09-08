@@ -1,0 +1,99 @@
+// Place all the styles related to the Foods controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Spectral+SC&display=swap');
+
+.food-info {
+    display: flex;
+    img {
+        width: 25em;
+    }
+    ul {
+        list-style: none;
+        padding: 0 0.5em;
+    }
+}
+
+form {
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #b3101090, #126e5085);
+    box-shadow: 5px 3px;
+
+}
+
+.logs {
+    border: 1px solid black;
+    margin: 5px;
+    background-color: #126e5085;
+    padding: 5px;
+    border-radius: 1rem;
+    box-shadow: 5px 3px;
+    .date {
+        text-align: right;
+        font-style: italic;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin-bottom: 0px;
+    }
+    .show-tags {
+        display: flex;
+        color: green;
+        justify-content: flex-end;
+        div {
+            padding: 0.2em;
+        }
+    }
+}
+
+.log-description {
+    width: 400px;
+}
+
+.your-foods {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10em;
+        width: 10em;
+        padding: 5px;
+        margin: 10px 2px;
+        border: 1px solid black;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+}
+
+.new-food {
+    .new_food {
+        margin: 0 auto;
+        width: fit-content;
+    }
+    input, textarea {
+        width: 300px;
+    }
+}
+
+.color1 {color: #121c20;}
+.color2 {color: #12506e;}
+.color3 {color: #1db2be;}
+.color4 {color: #9de987;}
+.color5 {color: #f4eb95;}
