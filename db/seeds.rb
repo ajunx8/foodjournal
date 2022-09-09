@@ -69,19 +69,19 @@ f6.logs << l11 << l12 << l13
 f7.logs << l14 << l15 << l16
 
 puts "Tags and Logs"
-l1.tags << t11 << t7 << t12
-l2.tags << t8 << t12 << t14
-l3.tags << t12 << t14
-l4.tags << t12 << t14
-l5.tags << t12 << t14
+l1.tags << t11 
+l2.tags << t8 
+l3.tags << t12 
+l4.tags << t12 
+l5.tags << t12 
 l6.tags << t1
-l7.tags << t14 << t7 << t4
-l8.tags << t2 << t9
-l9.tags << t7 << t2
-l10.tags << t7 << t3
+l7.tags << t14 
+l8.tags << t2 
+l9.tags << t7 
+l10.tags << t7
 l11.tags << t8
-l12.tags << t13 << t14 
-l13.tags << t13 << t14
-l14.tags << t12 << t9
-l15.tags << t7 << t12 << t14
+l12.tags << t13
+l13.tags << t13
+l14.tags << t12
+l15.tags << t7
 l16.tags << t15
