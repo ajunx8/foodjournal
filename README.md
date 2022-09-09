@@ -1,24 +1,54 @@
-# README
+# The Food Journal 
+> Record what you eat and when! See your favourite foods!
+> Here: [https://food-journal-2.herokuapp.com/]. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-Things you may want to cover:
 
-* Ruby version
+## General Information
+Keep a journal of your foods!
 
-* System dependencies
+### What problems does it solve?
+Have you ever wanted to remember where you had that amazing burrito? Check out 'The Food Journal'. 
+Log and take notes about where you eaten! what you've eaten and how many times you've had it!
+Tag your logs and see your foods under that tag!
 
-* Configuration
+### What is the purpose of this project?
+Hone and explore the limits of my capability in making a full stack Ruby on rails project with PostgresQL and ActiveRecord
 
-* Database creation
+## Technologies Used
+- Ruby 2.7.6
+- Ruby on Rails 5.2.8
+- jquery
+- bootstrap 4.6.1
+- chartkick
+- bcrypt
+- HTML
+- CSS/SCSS
+- Animate.css
 
-* Database initialization
+## Features
+List the ready features here:
+- 
 
-* How to run the test suite
+## Project Status
+- Beta
 
-* Services (job queues, cache servers, search engines, etc.)
+## Room for Improvement
 
-* Deployment instructions
+## Acknowledgements
+- This project was inspired by: General Assembly
+- Many thanks to: Joel Turnbull and Loden from GA
 
-* ...
+## Contact
+adrian.greksa@gmail.com
