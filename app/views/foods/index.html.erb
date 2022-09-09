@@ -1,14 +1,14 @@
 <h1>Your Foods</h1>
 
 
-    <div class="your-foods">
-        <% @foods.each do |food| %>
-            <%= link_to food_path(food.id) do %>
-                <div>
-                    <p>
-                        <%= food.name %>
-                    </p>
-                </div>
-            <% end %>
+<div class="your-foods">
+    <% @foods.each do |food| %>
+        <%= link_to food_path(food.id) do %>
+            <div>
+                <p>
+                    <%= food.name %>
+                </p>
+            </div>
         <% end %>
-    </div>
+    <% end %>
+</div>

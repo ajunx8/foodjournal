@@ -2,12 +2,14 @@
 
 <div class="your-foods">
     <% @tag.foods_for_user(@current_user.id).each do |food| %>
-        <div>
-            <p>
-                <%= link_to food.name, food_path(food.id) %>
-            </p>
-        </div>
+        <%= link_to food_path(food.id) do %>
+            <div>
+                <p>
+                    <%= food.name %>
+                </p>
+            </div>
+        <% end %>
     <% end %>
 </div>
 
-<%= link_to 'back', tags_path %>
+<%= link_to 'Tag Index', tags_path %>
