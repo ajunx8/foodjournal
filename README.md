@@ -20,7 +20,7 @@ Keep a journal of your foods!
 
 ### What problems does it solve?
 Have you ever wanted to remember where you had that amazing burrito? Check out 'The Food Journal'. 
-Log and take notes about where you eaten! what you've eaten and how many times you've had it!
+Log and take notes about where you've eaten it! what you've eaten and how many times you've had it!
 Tag your logs and see your foods under that tag!
 
 ### What is the purpose of this project?
