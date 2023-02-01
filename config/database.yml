@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: food_journal_production
   username: food_journal
   password: <%= ENV['FOOD_JOURNAL_DATABASE_PASSWORD'] %>
+
