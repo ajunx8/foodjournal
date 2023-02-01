@@ -12,8 +12,9 @@ services:
       - key: RAILS_MASTER_KEY
         sync: false
       - key: DATABASE_URL
-        fromDatabase: postgres
-        property: connectionString
+        fromDatabase:
+          name: postgres
+          property: connectionString
   - type: redis
     name: redis
     ipAllowList: []
